@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="to do.css">
+    
+    
+
+</head>
+<body>
+    <header class="bg-dark mb-3">
+        <div class="container">
+          <div class="row">
+             <div class="col-sm-12">
+                 <nav class="navbar justify-content-between">
+                     <a class="navbar-brand">To Do List</a>
+                     <form class="form-inline">
+                         <input class="form-control mr-sm-2" type="search"
+                         placeholder="Search" aria-lable="Search"
+                         id="searchtextbox"/>
+                     </form>
+                 </nav>
+             </div>
+          </div>
+        </div>
+    </header>
+    <section class="todo-outer">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-sm-12 col-md-8">
+                    <h1>My To Do List</h1>
+                    <div class="todo-inner">
+                        <div class="form-row">
+                            <div class="col-8 mr-sm-2">
+                                <input type="text" class="form-control pla" 
+                                placeholder="Enter your task" id="addtaskinput" />
+                                <input type="hidden" id="saveindex" >
+
+                            </div>
+                            <button type="button" class="btn btn-success mr-sm-2"
+                             id="addtaskbtn">Add Task</button>
+                             <button type="button" style="display:none " class="btn btn-success mr-sm-2"
+                             id="savetaskbtn">Save Task</button>
+                             <button type="button"  id="deleteallbtn" 
+                             class="btn btn-danger">
+                                 Delete All
+                             </button>
+
+                        </div>
+                        <div class="to-do-output">
+                            <table class="table table-striped mt-3 mb-0"
+                            id="addedtasklist">
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Pawan</td>
+                                <td><button type="button" style="outline: none" class="text-primary">
+                                    <i class="fa fa-edit"></i>Edit
+                                </button></td>
+                                <td><button type="button" class="text-danger">
+                                    <i class="fa fa-trash"></i>Delete
+                                </button></td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+                
+            </div>
+        </div>
+    </section>
+    <script src="todo.js"></script>
+</body>
+</html>

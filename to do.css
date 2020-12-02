@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    background: #f5f5f5;
+}
+header .navbar{
+    padding:  10px 0;
+}
+header nav.navbar .navbar-brand{
+    color: #fff;
+}
+section.todo-outer {
+    width: 100%;
+    float: left;
+    padding: 30px 0;
+}
+section.todo-outer h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.todo-inner {
+    width: 100%;
+    float: left;
+    padding: 40px;
+    box-shadow: 0 0 10px #ccc;
+    background: #fff;
+}
+table tr td button {
+    background: no-repeat;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+table tr td button:active{
+    outline: none;
+}
+table{
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+}
