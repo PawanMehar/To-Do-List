@@ -36,7 +36,7 @@ function showtask() {
         html += `<tr>
         <th scope="row">${index+1}</th>
         <td>${item}</td>
-        <td><button type="button" onclick="edittask(${index})" class="text-primary">
+        <td><button type="button" onclick="edittask(${index})" class="text-success">
             <i class="fa fa-edit"></i>Edit
         </button></td>
         <td><button type="button" onclick = "deleteitem(${index})" 
